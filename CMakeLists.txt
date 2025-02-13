@@ -3,11 +3,6 @@ project(PunkDither)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Ensure AE_SDK_PATH is set
-if (NOT DEFINED ENV{AE_SDK_PATH})
-    message(FATAL_ERROR "AE_SDK_PATH is not set. Make sure the After Effects SDK is downloaded.")
-endif()
-
 set(AE_SDK_PATH ${CMAKE_SOURCE_DIR}/May2023_AfterEffectsSDK_Win)
 
 # Add include directories
