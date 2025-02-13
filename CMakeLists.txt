@@ -8,7 +8,7 @@ if (NOT DEFINED ENV{AE_SDK_PATH})
     message(FATAL_ERROR "AE_SDK_PATH is not set. Make sure the After Effects SDK is downloaded.")
 endif()
 
-set(AE_SDK_PATH $ENV{AE_SDK_PATH})
+set(AE_SDK_PATH ${CMAKE_SOURCE_DIR}/May2023_AfterEffectsSDK_Win)
 
 # Add include directories
 include_directories(${AE_SDK_PATH}/Headers)
