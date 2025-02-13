@@ -19,14 +19,16 @@ jobs:
       - name: Install dependencies
         run: brew install cmake ninja  # Install necessary tools
 
-      - name: Configure build
-        run: cmake -B build -S . -G "Ninja"
-
-      - name: Compile code
-        run: cmake --build build
-        
       - name: Download After Effects SDK
         run: |
           curl -L -o aesdk.zip "https://your-download-link.com/aesdk.zip"
-          unzip aesdk.zip -d AfterEffectsSDK
+          unzip aesdk.zip
+          mv AfterEffectsSDK $GITHUB_WORKSPACE/
 
+      - name: Configure build
+        run: cmake -B build -S . -G "Ninja"
+        env:
+          AE_SDK_PATH: $GITHUB_WORKSPACE/AfterEffectsSDK
+
+      - name: Compile code
+        run: cmake --build build
