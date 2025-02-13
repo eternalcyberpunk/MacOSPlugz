@@ -19,12 +19,11 @@ jobs:
       - name: Install dependencies
         run: brew install cmake ninja  # Install necessary tools
 
-      - name: Download After Effects SDK
+      - name: Extract After Effects SDK
         run: |
-          FILE_ID="1AbCdEfGhIJkLmNOpQ"
-          curl -L -o aesdk.zip "https://drive.google.com/drive/folders/1-bDlKh2DHNOE7P3q1jnwjfZEAPd69Ftt?usp=drive_link"
-          unzip aesdk.zip
+          unzip May2023_AfterEffectsSDK_Win.zip
           mv AfterEffectsSDK $GITHUB_WORKSPACE/
+
 
 
       - name: Configure build
