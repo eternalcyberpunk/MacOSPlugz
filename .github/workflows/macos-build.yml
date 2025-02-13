@@ -22,7 +22,7 @@ jobs:
       - name: Download After Effects SDK
         run: |
           FILE_ID="1AbCdEfGhIJkLmNOpQ"
-          curl -L -o aesdk.zip "https://drive.google.com/file/d/152B0RwvzXQy4MzSuJuhYx-qJoOTkp_k0/view?usp=drive_link"
+          curl -L -o aesdk.zip "https://drive.google.com/drive/folders/1-bDlKh2DHNOE7P3q1jnwjfZEAPd69Ftt?usp=drive_link"
           unzip aesdk.zip
           mv AfterEffectsSDK $GITHUB_WORKSPACE/
 
