@@ -3,4 +3,8 @@ project(MyMacOSProject)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(MyApp main.cpp)  # Change 'main.cpp' to your actual source file
+set(AE_SDK_PATH $ENV{GITHUB_WORKSPACE}/AfterEffectsSDK)
+
+add_executable(MyApp PunkDither.cpp)  # Change 'main.cpp' to your actual source file
+
+
