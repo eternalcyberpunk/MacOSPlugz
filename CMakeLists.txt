@@ -3,6 +3,7 @@ project(PunkDither)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# Set After Effects SDK Path
 set(AE_SDK_PATH ${CMAKE_SOURCE_DIR}/May2023_AfterEffectsSDK_Win)
 
 # Add include directories
@@ -16,10 +17,7 @@ add_executable(PunkDither
     PunkDither_Strings.h
 )
 
-# Link AE SDK libraries (Modify this if needed)
-target_link_libraries(PunkDither
-    "-framework Carbon"  # Required for After Effects SDK
-)
-
-
-
+# Link AE SDK libraries (macOS only)
+if (APPLE)
+    target_link_libraries(PunkDither "-framework Carbon")
+endif()
