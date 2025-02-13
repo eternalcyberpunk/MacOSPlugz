@@ -24,3 +24,9 @@ jobs:
 
       - name: Compile code
         run: cmake --build build
+        
+      - name: Download After Effects SDK
+        run: |
+          curl -L -o aesdk.zip "https://your-download-link.com/aesdk.zip"
+          unzip aesdk.zip -d AfterEffectsSDK
+
