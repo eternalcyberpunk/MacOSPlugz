@@ -21,7 +21,7 @@ jobs:
 
       - name: Extract After Effects SDK
         run: |
-          unzip May2023_AfterEffectsSDK_Win.zip
+          unzip -o May2023_AfterEffectsSDK_Win.zip
           mv AfterEffectsSDK $GITHUB_WORKSPACE/
 
 
