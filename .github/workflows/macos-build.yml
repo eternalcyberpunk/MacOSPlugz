@@ -21,11 +21,7 @@ jobs:
               
       - name: Install dependencies
         run: brew install libomp
-
-      - name: Debug CMake OpenMP Detection
-        run: cmake -B build -S . -G "Ninja" --debug-find OpenMP
-
-
+        
       - name: Extract After Effects SDK
         run: |
           unzip -o May2023_AfterEffectsSDK_Win.zip
