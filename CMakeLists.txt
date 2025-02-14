@@ -8,7 +8,7 @@ set(AE_SDK_PATH ${CMAKE_SOURCE_DIR})  # Ensure correct root path
 
 # Add include directories
 include_directories(
-    ${AE_SDK_PATH}/AfterEffectsSDK/May2023_AfterEffectsSDK_Win/Examples/Headers
+    ${AE_SDK_PATH}/May2023_AfterEffectsSDK_Win/Examples/Headers
 )
 
 # Add source files
