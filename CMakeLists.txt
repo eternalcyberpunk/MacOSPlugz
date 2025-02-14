@@ -14,14 +14,10 @@ include_directories(
 )
 
 # Enable OpenMP
-find_package(OpenMP REQUIRED)
-
-if(OpenMP_CXX_FOUND)
-    message(STATUS "OpenMP found!")
-    
+find_package(OpenMP REQUIRED)   
     set(OpenMP_CXX_FLAGS "-Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include")
     set(OpenMP_CXX_LIB_NAMES "omp")
-    set(OpenMP_CXX_LIBRARIES "/opt/homebrew/opt/libomp/lib/libomp.dylib")
+    set(OpenMP_CXX_LIBRARIES "/opt/homebrew/share/cmake/Modules")
 
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_CXX_FLAGS}")
