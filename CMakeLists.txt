@@ -4,22 +4,13 @@ project(PunkDither)
 set(CMAKE_CXX_STANDARD 17)
 
 # Set After Effects SDK Path
-set(AE_SDK_PATH ${CMAKE_SOURCE_DIR})  # Ensure correct root path
+set(AE_SDK_PATH ${CMAKE_SOURCE_DIR}/AfterEffectsSDK)
 
-# Add include directories
+# Include AE SDK headers
 include_directories(
-    ${AE_SDK_PATH}/AfterEffectsSDK/Examples/Headers
-    ${AE_SDK_PATH}/AfterEffectsSDK/Examples/Util
-    ${AE_SDK_PATH}/AfterEffectsSDK/Examples/Headers/SP
-    ${AE_SDK_PATH}/AfterEffectsSDK/Examples/AEGP
-)
-
-# Add source files
-add_executable(PunkDither
-    PunkDither.cpp
-    PunkDither.h
-    PunkDither_Strings.cpp
-    PunkDither_Strings.h
+    ${AE_SDK_PATH}/Examples/Headers
+    ${AE_SDK_PATH}/Examples/Util
+    ${AE_SDK_PATH}/Examples/Headers/SP
 )
 
 # Find OpenMP
@@ -27,13 +18,23 @@ find_package(OpenMP REQUIRED)
 
 if(OpenMP_CXX_FOUND)
     message(STATUS "Found OpenMP: ${OpenMP_CXX_FLAGS}")
-    target_compile_options(PunkDither PRIVATE ${OpenMP_CXX_FLAGS})
-    target_link_libraries(PunkDither PRIVATE OpenMP::OpenMP_CXX)
-else()
-    message(FATAL_ERROR "OpenMP not found!")
+    add_compile_options(${OpenMP_CXX_FLAGS})
+    add_link_options(${OpenMP_CXX_LIBRARIES})
 endif()
 
-# Link AE SDK libraries (macOS only)
-if (APPLE)
-    target_link_libraries(PunkDither PRIVATE "-framework Carbon")
-endif()
+# Add source files
+add_executable(PunkDither
+    PunkDither.cpp
+    PunkDither.h
+    PunkDither_Strings.cpp
+    PunkDither_Strings.h
+    ${AE_SDK_PATH}/Examples/AEGP/EntryPoint.cpp  # Ensure AE SDK sources are compiled
+    ${AE_SDK_PATH}/Examples/AEGP/AEGP_SuiteHandler.cpp
+)
+
+# Link After Effects SDK libraries
+target_link_libraries(PunkDither 
+    "-framework Carbon"
+    OpenMP::OpenMP_CXX
+)
+
