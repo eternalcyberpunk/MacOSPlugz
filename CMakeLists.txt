@@ -13,6 +13,13 @@ include_directories(
     ${AE_SDK_PATH}/AfterEffectsSDK/Examples/Headers/SP
 )
 
+# Find OpenMP
+find_package(OpenMP REQUIRED)
+if(OpenMP_CXX_FOUND)
+    target_link_libraries(PunkDither PRIVATE OpenMP::OpenMP_CXX)
+endif()
+
+
 # Add source files
 add_executable(PunkDither
     PunkDither.cpp
