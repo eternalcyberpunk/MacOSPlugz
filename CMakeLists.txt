@@ -13,6 +13,14 @@ include_directories(
     ${AE_SDK_PATH}/AfterEffectsSDK/Examples/Headers/SP
 )
 
+# Add source files
+add_executable(PunkDither
+    PunkDither.cpp
+    PunkDither.h
+    PunkDither_Strings.cpp
+    PunkDither_Strings.h
+)
+
 # Find OpenMP
 find_package(OpenMP REQUIRED)
 
@@ -24,16 +32,6 @@ if(OpenMP_CXX_FOUND)
 else()
     message(FATAL_ERROR "OpenMP not found!")
 endif()
-
-
-
-# Add source files
-add_executable(PunkDither
-    PunkDither.cpp
-    PunkDither.h
-    PunkDither_Strings.cpp
-    PunkDither_Strings.h
-)
 
 # Link AE SDK libraries (macOS only)
 if (APPLE)
