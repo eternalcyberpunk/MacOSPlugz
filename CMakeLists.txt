@@ -28,6 +28,8 @@ add_executable(PunkDither
     PunkDither.h
     PunkDither_Strings.cpp
     PunkDither_Strings.h
+    ${AE_SDK_PATH}/Examples/Util/AEGP_SuiteHandler.cpp
+    ${AE_SDK_PATH}/Examples/Util/entry.h
 )
 
 # Link After Effects SDK libraries
