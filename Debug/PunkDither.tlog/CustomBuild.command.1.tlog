@@ -1,0 +1,4 @@
+^C:\USERS\ALUKARD\DESKTOP\AEPLUGS\AFTEREFFECTSSDK\EXAMPLES\MYBUILDS\PUNKDITHER\PUNKDITHERPIPL.R
+cl /I "C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\Win\..\..\..\Headers" /EP ".."\\"PunkDitherPiPL.r" > "x64\Debug\"\\"PunkDitherPiPL.rr"
+"C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\Win\..\..\..\Resources\PiPLTool" "x64\Debug\PunkDitherPiPL.rr" "x64\Debug\PunkDitherPiPL.rrc"
+cl /D "MSWindows" /EP x64\Debug\PunkDitherPiPL.rrc >               "C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\Win\"\\"PunkDitherPiPL".rc

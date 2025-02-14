@@ -1,0 +1,18 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (LeanSynth.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Compiling the PiPL
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  PunkDitherPiPL.r
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  PunkDitherPiPL.rrc
+  AEGP_SuiteHandler.cpp
+  MissingSuiteError.cpp
+  PunkDither.cpp
+  PunkDither_Strings.cpp
+  Generating Code...
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(45,10): error C1083: Cannot open include file: 'LeanSynth.h': No such file or directory
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither_Strings.cpp(22,10): error C1083: Cannot open include file: 'LeanSynth.h': No such file or directory

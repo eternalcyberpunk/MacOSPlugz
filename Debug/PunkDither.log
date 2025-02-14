@@ -1,0 +1,26 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (LeanSynth.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  PunkDither.cpp
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\Util\Param_Utils.h(343,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compiling source file '../PunkDither.cpp')
+  
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(109,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(118,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(126,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(134,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(144,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(154,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(163,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(254,17): warning C4244: 'initializing': conversion from 'PF_FpLong' to 'float', possible loss of data
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(261,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(291,18): warning C4244: 'initializing': conversion from 'PF_FpLong' to 'int', possible loss of data
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(324,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(329,25): warning C4244: 'initializing': conversion from 'PF_FpLong' to 'int', possible loss of data
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(350,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(355,25): warning C4244: 'initializing': conversion from 'PF_FpLong' to 'int', possible loss of data
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(376,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(381,26): warning C4244: 'initializing': conversion from 'PF_FpLong' to 'int', possible loss of data
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(411,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(416,25): warning C4244: 'initializing': conversion from 'PF_FpLong' to 'int', possible loss of data
+C:\Users\Alukard\Desktop\aePlugs\AfterEffectsSDK\Examples\myBuilds\PunkDither\PunkDither.cpp(480,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  PunkDither.vcxproj -> C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\MyBuilds\PunkDither.aex
