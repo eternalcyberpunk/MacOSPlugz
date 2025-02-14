@@ -3,6 +3,14 @@ project(PunkDither)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# Enable OpenMP
+find_package(OpenMP REQUIRED)
+if(OpenMP_CXX_FOUND)
+    message(STATUS "OpenMP found!")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_CXX_FLAGS}")
+endif()
+
 # Set After Effects SDK Path
 set(AE_SDK_PATH ${CMAKE_SOURCE_DIR})  # Ensure correct root path
 
@@ -11,7 +19,6 @@ include_directories(
     ${AE_SDK_PATH}/AfterEffectsSDK/Examples/Headers
     ${AE_SDK_PATH}/AfterEffectsSDK/Examples/Util
     ${AE_SDK_PATH}/AfterEffectsSDK/Examples/Headers/SP
-    
 )
 
 # Add source files
