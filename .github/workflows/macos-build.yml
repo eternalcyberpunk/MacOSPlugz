@@ -30,5 +30,10 @@ jobs:
         env:
           AE_SDK_PATH: $GITHUB_WORKSPACE/AfterEffectsSDK
 
+      - name: Debug SDK Path
+        run: ls -R May2023_AfterEffectsSDK_Win
+
+
       - name: Compile code
         run: cmake --build build
+        
