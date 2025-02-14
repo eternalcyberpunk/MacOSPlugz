@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(AE_SDK_PATH ${CMAKE_SOURCE_DIR}/May2023_AfterEffectsSDK_Win)
 
 # Add include directories
-include_directories(${AE_SDK_PATH}/Headers)
+include_directories(${AE_SDK_PATH}/May2023_AfterEffectsSDK_Win/Headers)
 
 # Add source files
 add_executable(PunkDither
