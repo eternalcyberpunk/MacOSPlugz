@@ -27,9 +27,13 @@ jobs:
           unzip -o May2023_AfterEffectsSDK_Win.zip
 
       - name: Configure build
-        run: cmake -B build -S . -G "Ninja"
+        run: |
+          cmake -B build -S . -G "Ninja" \
+          -DCMAKE_CXX_FLAGS="-Xpreprocessor -fopenmp -I$(brew --prefix libomp)/include" \
+          -DCMAKE_EXE_LINKER_FLAGS="-L$(brew --prefix libomp)/lib -lomp"
         env:
           AE_SDK_PATH: $GITHUB_WORKSPACE
+
 
       - name: Compile code
         run: cmake --build build
