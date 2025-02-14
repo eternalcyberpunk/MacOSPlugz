@@ -20,7 +20,7 @@ jobs:
         run: brew install cmake ninja  # Install necessary tools
               
       - name: Install dependencies
-        run: brew install libomp
+        run: brew install libomp ninja
         
       - name: Extract After Effects SDK
         run: |
@@ -29,6 +29,8 @@ jobs:
       - name: Configure build
         run: |
           cmake -B build -S . -G "Ninja" \
+          -DCMAKE_C_COMPILER=$(brew --prefix llvm)/bin/clang \
+          -DCMAKE_CXX_COMPILER=$(brew --prefix llvm)/bin/clang++ \
           -DCMAKE_CXX_FLAGS="-Xpreprocessor -fopenmp -I$(brew --prefix libomp)/include" \
           -DCMAKE_EXE_LINKER_FLAGS="-L$(brew --prefix libomp)/lib -lomp"
         env:
