@@ -26,8 +26,7 @@ find_package(OpenMP REQUIRED)
 
 if(OpenMP_CXX_FOUND)
     message(STATUS "Found OpenMP: ${OpenMP_CXX_FLAGS}")
-    add_compile_options(${OpenMP_CXX_FLAGS})
-    add_link_options(${OpenMP_CXX_LIBRARIES})
+    target_compile_options(PunkDither PRIVATE ${OpenMP_CXX_FLAGS})
     target_link_libraries(PunkDither PRIVATE OpenMP::OpenMP_CXX)
 else()
     message(FATAL_ERROR "OpenMP not found!")
@@ -35,6 +34,5 @@ endif()
 
 # Link AE SDK libraries (macOS only)
 if (APPLE)
-    target_link_libraries(PunkDither "-framework Carbon")
+    target_link_libraries(PunkDither PRIVATE "-framework Carbon")
 endif()
-
