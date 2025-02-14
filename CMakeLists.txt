@@ -11,6 +11,7 @@ include_directories(
     ${AE_SDK_PATH}/AfterEffectsSDK/Examples/Headers
     ${AE_SDK_PATH}/AfterEffectsSDK/Examples/Util
     ${AE_SDK_PATH}/AfterEffectsSDK/Examples/Headers/SP
+    ${AE_SDK_PATH}/AfterEffectsSDK/Examples/AEGP
 )
 
 # Add source files
