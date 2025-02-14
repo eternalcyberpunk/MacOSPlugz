@@ -18,6 +18,7 @@ jobs:
 
       - name: Install dependencies
         run: brew install cmake ninja  # Install necessary tools
+        run: brew install libomp
 
       - name: Extract After Effects SDK
         run: |
