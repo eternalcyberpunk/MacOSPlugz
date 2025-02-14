@@ -26,7 +26,7 @@ jobs:
       - name: Configure build
         run: cmake -B build -S . -G "Ninja"
         env:
-          AE_SDK_PATH: $GITHUB_WORKSPACE/AfterEffectsSDK
+          AE_SDK_PATH: $GITHUB_WORKSPACE
 
       - name: Compile code
         run: cmake --build build
